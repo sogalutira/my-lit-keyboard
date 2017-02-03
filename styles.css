@@ -1,0 +1,33 @@
+body {
+	background-color: black;
+}
+span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px 5px 5px 5px;
+	margin: 0 auto;
+	text-align: center;
+	/*Gives text a neon glow*/
+	/*text-shadow: 0 0 3px #FF0000;*/
+	color: #fff;
+  	font-family: Monoton;
+}
+span:hover{
+	animation: neon1 1.5s ease-in-out infinite alternate;
+	transition: all 0.5s;
+}
+div{
+	margin: 20px 20px 20px 20px;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
