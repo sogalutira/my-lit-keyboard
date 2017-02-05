@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Lit Keyboard</title>
+  <link rel="stylesheet" href="styles.css"></link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="main-container">
+    <h1>My Lit Keyboard</h1>
+    <div id="keyboard-container">
+      <div id="screen">
+      <div id="pad">
+        <i class="fa fa-file-text-o"></i>
+          Typing Pad
+          <div id="close">[X]</div>
+        </div>
+        <textarea id="ta" autofocus></textarea>
+      </div>
+      <div id="first-row">
+        <span id="`">`</span>
+        <span id="1">1</span>
+        <span id="2">2</span>
+        <span id="3">3</span>
+        <span id="4">4</span>
+        <span id="5">5</span>
+        <span id="6">6</span>
+        <span id="7">7</span>
+        <span id="8">8</span>
+        <span id="9">9</span>
+        <span id="0">0</span>
+        <span id="-">-</span>
+        <span id="=">=</span>
+        <span id="backspace">delete</span>
+      </div>
+      <div id="second-row">
+        <span id="tab">tab</span>
+        <span id="q">q</span>
+        <span id="w">w</span>
+        <span id="e">e</span>
+        <span id="r">r</span>
+        <span id="t">t</span>
+        <span id="y">y</span>
+        <span id="u">u</span>
+        <span id="i">i</span>
+        <span id="o">o</span>
+        <span id="p">p</span>
+        <span id="[">[</span>
+        <span id="]">]</span>
+        <span id="\">\</span>
+      </div>
+      <div id="third-row">
+        <span id="capslock">caps</span>
+        <span id="a">a</span>
+        <span id="s">s</span>
+        <span id="d">d</span>
+        <span id="f">f</span>
+        <span id="g">g</span>
+        <span id="h">h</span>
+        <span id="j">j</span>
+        <span id="k">k</span>
+        <span id="l">l</span>
+        <span id=";">;</span>
+        <span id="'">'</span>
+        <span id="enter">return</span>
+      </div>
+      <div id="fourth-row">
+        <span id="shiftl">shift</span>
+        <span id="z">z</span>
+        <span id="x">x</span>
+        <span id="c">c</span>
+        <span id="v">v</span>
+        <span id="b">b</span>
+        <span id="n">n</span>
+        <span id="m">m</span>
+        <span id=","><</span>
+        <span id=".">></span>
+        <span id="/">/</span>
+        <span id="shiftr">shift</span>
+      </div>
+    </div>
+  <div id="buttons-container">
+    <button onClick="defaultLit()">Default</button>
+    <button onClick="pulse()">Pulse</button>
+    <button onClick="rainbow()">Cycle</button>
+    <button onClick="erase()">Clear Text</button>
+  </div>
+  </div>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
