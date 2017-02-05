@@ -9,6 +9,30 @@ var row1 = getID('first-row');
 var row2 = getID('second-row');
 var row3 = getID('third-row');
 var row4 = getID('fourth-row');
+var symbols = {
+  '`': '~',
+  '1': '!',
+  '2': '@',
+  '3': '#',
+  '4': '$',
+  '5': '%',
+  '6': '^',
+  '7': '&',
+  '8': '*',
+  '9': '(',
+  '0': ')',
+  '-': '_',
+  '=': '+',
+  '[': '{',
+  ']': '}',
+  "\\" : "|",
+  ';': ':',
+  "'": '"',
+  ',': '<',
+  '.': '>',
+  '/': '?'
+};
+
 var keydown = false;
 
 //  ALLOWS TAB IN TEXT AREA
@@ -40,10 +64,20 @@ function noClass(el1, el2, el3, el4){
 
 // ADDS 'active' CLASS
 function getLit(elId){
+  // console.log('elId key', elId.key);
   var span = getID(elId.key.toLowerCase());
   if (elId.keyCode === 16 || elId.which === 16){
     shift1.classList.add('active');
     shift2.classList.add('active');
+  }
+  for (var key in symbols){
+    if (elId.key === symbols[key]){
+      getID(key).classList.add('active');
+    }
+  }
+  if (elId.key === '!'){
+    var num1 = getID('1');
+    num1.classList.add('active');
   }
   if (elId.key.toLowerCase() === 'tab'){
     setTimeout(function(){
@@ -64,6 +98,11 @@ function unLit(elId){
     if (elId.keyCode === 16 || elId.which === 16){
       shift1.classList.remove('active');
       shift2.classList.remove('active');
+  }
+  for (var key in symbols){
+    if (elId.key === symbols[key]){
+      getID(key).classList.remove('active');
+    }
   }
   if (span === null){
     return false;
