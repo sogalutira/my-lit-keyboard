@@ -64,7 +64,6 @@ function noClass(el1, el2, el3, el4){
 
 // ADDS 'active' CLASS
 function getLit(elId){
-  console.log(elId);
   var span = getID(elId.key.toLowerCase());
   if (elId.keyCode === 16 || elId.which === 16){
     shift1.classList.add('active');
