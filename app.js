@@ -64,7 +64,7 @@ function noClass(el1, el2, el3, el4){
 
 // ADDS 'active' CLASS
 function getLit(elId){
-  // console.log('elId key', elId.key);
+  console.log(elId);
   var span = getID(elId.key.toLowerCase());
   if (elId.keyCode === 16 || elId.which === 16){
     shift1.classList.add('active');
@@ -113,7 +113,6 @@ function unLit(elId){
 
 // FUNCTION FOR PULSING KEYBOARD LIGHT
 function pulse(e){
-  console.log('clicked');
   var text = getID('ta');
   text.focus();
   document.body.removeEventListener('keydown', getLit);
@@ -126,7 +125,6 @@ function pulse(e){
 
 // FUNCTION RAINBOW KEYBOARD LIGHT
 function rainbow(e){
-  console.log('clicked');
   var text = getID('ta');
   text.focus();
   document.body.removeEventListener('keydown', getLit);

@@ -160,6 +160,7 @@ span {
   text-align: center;
   color: #fff;
   font-family: Arial;
+  border-radius: 3px;
 }
 
 .active{
