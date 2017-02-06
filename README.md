@@ -2,6 +2,9 @@
 
 You always wanted a mechanical keyboard, but you don't have any money for it! Good thing you're a programmer! So you'll just develop one yourself! :D
 
+<p align="center">
+<img src="https://github.com/sogalutira/my-lit-keyboard/blob/master/keyboardtut.gif" width="40%" height="40%"></img></p>
+
 ###Objective
 Create an application using HTML text area, JavaScript event listeners, classList, key codes, CSS styling and CSS animations.
 
