@@ -33,8 +33,6 @@ var symbols = {
   '/': '?'
 };
 
-var keydown = false;
-
 //  ALLOWS TAB IN TEXT AREA
 var textareas = document.getElementsByTagName('textarea');
 for(var i = 0; i < textareas.length; i++){
@@ -64,6 +62,7 @@ function noClass(el1, el2, el3, el4){
 
 // ADDS 'active' CLASS
 function getLit(elId){
+  console.log(elId);
   var span = getID(elId.key.toLowerCase());
   if (elId.keyCode === 16 || elId.which === 16){
     shift1.classList.add('active');
@@ -73,10 +72,6 @@ function getLit(elId){
     if (elId.key === symbols[key]){
       getID(key).classList.add('active');
     }
-  }
-  if (elId.key === '!'){
-    var num1 = getID('1');
-    num1.classList.add('active');
   }
   if (elId.key.toLowerCase() === 'tab'){
     setTimeout(function(){
@@ -92,7 +87,6 @@ function getLit(elId){
 
 // REMOVES active CLASS
 function unLit(elId){
-  keydown = false;
   var span = getID(elId.key.toLowerCase());
     if (elId.keyCode === 16 || elId.which === 16){
       shift1.classList.remove('active');
