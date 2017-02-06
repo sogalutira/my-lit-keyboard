@@ -26,42 +26,46 @@ Upon completing this project students should understand:
 
 ###Your Challenge
 Get started:
+
 1. Fork and Clone this repo
 2. Create and app.js and styles.css file
 3. Link the app.js and styles.css in the index.html
 
-####CSS Step 1
+####Step 1 - CSS
 1. In the CSS file use the `border` property to create borders for each **span**
 2. Apply `width` and `height` as necessary so that the numbers and letters look like a keyboard
 3. Create a class `.active` for the span and use the `color` property to set a color of your choice for the span to test the following event listeners below
 
-####JavaScript Step 2
+####Step 2 - JavaScript
 Function for `keydown`
-    1. Create a function to add the class *active* to the span using `.classList.add('className')`
-    2. Target each span's ID by using `document.getElementById`. There is a property on the object called `key` which has a value of the typed key from the keyboard. Use `key` to help you target each span's ID
-    3. Create an event listener for `keydown`
 
-Function for 'keyup'
-    1. Create a function to remove the class *active* to the span using `.classList.remove('className')`
-    2. Create an event listener for `keyup`
+1. Create a function to add the class *active* to the span using `.classList.add('className')`
+2. Target each span's ID by using `document.getElementById`. There is a property on the object called `key` which has a value of the typed key from the keyboard. Use `key` to help you target each span's ID
+3. Create an event listener for `keydown`
+
+Function for `keyup`
+
+1. Create a function to remove the class *active* to the span using `.classList.remove('className')`
+2. Create an event listener for `keyup`
 
 
 Conditionals
+
 1. Since keyboards have two shift keys, create an **If statement** to add the class *active* to both shift keys
 2. Create an **If statement** so that there are no errors when you type a key that has no span/key on the virtual keyboard
 
-####CSS Animations Step 3
+####Step 3 - CSS Animations
 1. In the *active* class use the `animation` property to add a neon glow to each virtual key
 2. Use `keyframes` animation to make the spans glow with the `text-shadow` property.
 2. Remove the `color` property
 
-####HTML Step 4
+####Step 4 - HTML
 1. Create a `textarea` above the virtual keyboard
 2. Style the `textarea` in the styles.css file
 3. Use `h1` to create a header and add a neon glow to the header
 
 ####Step 5
-Style as needed
+Style as needed in the styles.css file
 
 ####Stretch
 1. Create a button that clears all the text in the `textarea`
@@ -72,16 +76,10 @@ Style as needed
 
 
 ###Resources
-[classList](http://www.w3schools.com/jsref/prop_element_classlist.asp)
-
-[Comparison and Logic Operators](http://www.w3schools.com/js/js_comparisons.asp)
-
-[Event Listeners](http://www.w3schools.com/js/js_htmldom_eventlistener.asp)
-
-[HTML Button Tag](http://www.w3schools.com/tags/tag_button.asp)
-
-[KeyCodes](http://keycode.info/)
-
-[Shadow Effects](http://www.w3schools.com/css/css3_shadows.asp)
-
-[Text Area](http://www.w3schools.com/TAgs/tag_textarea.asp)
+* [classList](http://www.w3schools.com/jsref/prop_element_classlist.asp)
+* [Comparison and Logic Operators](http://www.w3schools.com/js/js_comparisons.asp)
+* [Event Listeners](http://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+* [HTML Button Tag](http://www.w3schools.com/tags/tag_button.asp)
+* [KeyCodes](http://keycode.info/)
+* [Shadow Effects](http://www.w3schools.com/css/css3_shadows.asp)
+* [Text Area](http://www.w3schools.com/TAgs/tag_textarea.asp)
