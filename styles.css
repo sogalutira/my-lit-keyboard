@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide|Monoton');
-@import url('https://fonts.googleapis.com/css?family=Monoton');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
@@ -13,6 +12,18 @@ h1 {
   width: 300px;
   font-family: 'Audiowide', cursive;
   animation: title 5s ease-in-out infinite;
+}
+
+@keyframes title {
+  0%, 100% {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #BA01FF, 0 0 20px #BA01FF, 0 0 25px #BA01FF, 0 0 30px #BA01FF, 0 0 35px #BA01FF;
+  }
+  25%, 75% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #BA01FF, 0 0 70px #BA01FF, 0 0 80px #BA01FF, 0 0 100px #BA01FF, 0 0 150px #BA01FF;
+  }
+  50% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #BA01FF, 0 0 35px #BA01FF, 0 0 40px #BA01FF, 0 0 50px #BA01FF, 0 0 75px #BA01FF;
+  }
 }
 
 textarea {
@@ -93,6 +104,40 @@ i.fa.fa-file-text-o {
   width: 260px;
 }
 
+span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px 5px 5px 5px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-family: Arial;
+  border-radius: 3px;
+}
+
+.active{
+  animation: neon1 1.5s ease-in-out infinite alternate;
+  transition: all 0.5s;
+}
+
+div{
+  margin: 20px 20px 20px 20px;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177, 0 0 200px #FF1177;
+    box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177, 0 0 200px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177, 0 0 100px #FF1177;
+    box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177, 0 0 100px #FF1177;
+  }
+}
+
 .pulsing {
   animation: pulse 3s ease-in-out infinite;
 }
@@ -146,52 +191,6 @@ i.fa.fa-file-text-o {
   /* blue */
   90%{
     text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF, 0 0 100px #228DFF;
-  }
-}
-
-span {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-style: solid;
-  border-width: 1px;
-  padding: 5px 5px 5px 5px;
-  margin: 0 auto;
-  text-align: center;
-  color: #fff;
-  font-family: Arial;
-  border-radius: 3px;
-}
-
-.active{
-  animation: neon1 1.5s ease-in-out infinite alternate;
-  transition: all 0.5s;
-}
-
-div{
-  margin: 20px 20px 20px 20px;
-}
-
-@-webkit-keyframes neon1 {
-  from {
-    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177, 0 0 200px #FF1177;
-    box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177, 0 0 200px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177, 0 0 100px #FF1177;
-    box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177, 0 0 100px #FF1177;
-  }
-}
-
-@keyframes title {
-  0%, 100% {
-    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #BA01FF, 0 0 20px #BA01FF, 0 0 25px #BA01FF, 0 0 30px #BA01FF, 0 0 35px #BA01FF;
-  }
-  25%, 75% {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #BA01FF, 0 0 70px #BA01FF, 0 0 80px #BA01FF, 0 0 100px #BA01FF, 0 0 150px #BA01FF;
-  }
-  50% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #BA01FF, 0 0 35px #BA01FF, 0 0 40px #BA01FF, 0 0 50px #BA01FF, 0 0 75px #BA01FF;
   }
 }
 
