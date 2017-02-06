@@ -16,7 +16,7 @@ Create an application using HTML text area, JavaScript event listeners, classLis
 * Key Codes
 
 ###Desired Outcomes
-Upon completing this projects students should understand:
+Upon completing this project students should understand:
 * JavaScript Event Listeners/Handlers
 * HTML text area
 * Key Code
@@ -37,13 +37,13 @@ Get started:
 
 ####JavaScript Step 2
 Function for `keydown`
-1. Create a function to add the class *active* to the span using `.classList.add('className')`
-2. Target each span's ID by using `document.getElementById`. There is a property on the object called `key` which has a value of the typed key from the keyboard. Use `key` to help you target each span's ID
-3. Create an event listener for `keydown`
+    1. Create a function to add the class *active* to the span using `.classList.add('className')`
+    2. Target each span's ID by using `document.getElementById`. There is a property on the object called `key` which has a value of the typed key from the keyboard. Use `key` to help you target each span's ID
+    3. Create an event listener for `keydown`
 
 Function for 'keyup'
-1. Create a function to remove the class *active* to the span using `.classList.remove('className')`
-2. Create an event listener for `keyup`
+    1. Create a function to remove the class *active* to the span using `.classList.remove('className')`
+    2. Create an event listener for `keyup`
 
 
 Conditionals
