@@ -5,10 +5,8 @@ document.body.addEventListener('keyup', unLit);
 // VARIABLE DECLARATION
 var shift1 = getID('shiftl');
 var shift2 = getID('shiftr');
-var row1 = getID('first-row');
-var row2 = getID('second-row');
-var row3 = getID('third-row');
-var row4 = getID('fourth-row');
+// Another way to do getElementsByTagName()
+var s = document.querySelectorAll('span');
 var symbols = {
   '`': '~',
   '1': '!',
@@ -53,16 +51,8 @@ function getID(id){
   return ids;
 }
 
-function noClass(el1, el2, el3, el4){
-  var element1 = el1.className = "";
-  var element2 = el2.className = "";
-  var element3 = el3.className = "";
-  var element4 = el4.className = "";
-}
-
 // ADDS 'active' CLASS
 function getLit(elId){
-  console.log(elId);
   var span = getID(elId.key.toLowerCase());
   if (elId.keyCode === 16 || elId.which === 16){
     shift1.classList.add('active');
@@ -109,11 +99,7 @@ function pulse(e){
   var text = getID('ta');
   text.focus();
   document.body.removeEventListener('keydown', getLit);
-  noClass(row1, row2, row3, row4);
-  row1.classList.add('pulsing');
-  row2.classList.add('pulsing');
-  row3.classList.add('pulsing');
-  row4.classList.add('pulsing');
+  allKeys('pulsing');
 }
 
 // FUNCTION RAINBOW KEYBOARD LIGHT
@@ -121,18 +107,14 @@ function rainbow(e){
   var text = getID('ta');
   text.focus();
   document.body.removeEventListener('keydown', getLit);
-  noClass(row1, row2, row3, row4);
-  row1.classList.add('rgb-cycle');
-  row2.classList.add('rgb-cycle');
-  row3.classList.add('rgb-cycle');
-  row4.classList.add('rgb-cycle');
+  allKeys('rgb-cycle');
 }
 
 // FUNCTION FOR DEFAULT active CLASS
 function defaultLit(e){
   document.body.addEventListener('keydown', getLit);
   document.body.addEventListener('keyup', unLit);
-  noClass(row1, row2, row3, row4);
+  allKeys();
   var text = getID('ta');
   text.focus();
 }
@@ -142,4 +124,15 @@ function erase() {
   var text = getID('ta');
   text.value = "";
   text.focus();
+}
+
+function allKeys(type){
+  for(var i = 0; i < s.length; i++){
+    if (type === null || type === undefined){
+      s[i].className = "";
+    }else{
+      s[i].className = "";
+      s[i].classList.add(type);
+    }
+  }
 }
